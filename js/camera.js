@@ -18,7 +18,7 @@ botaoIniciarCamera.addEventListener('click', async function () {
 })
 
 botaoTirarFoto.addEventListener('click', function() {
-    canvas.getContext('2d').drawImagem(video, 0, 0, canvas.width, canvas.height);
+    canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
 
     imagemURL = canvas.toData('image/jpeg');
 
