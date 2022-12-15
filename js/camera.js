@@ -20,7 +20,7 @@ botaoIniciarCamera.addEventListener('click', async function () {
 botaoTirarFoto.addEventListener('click', function() {
     canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
 
-    imagemURL = canvas.toData('image/jpeg');
+    imagemURL = canvas.toDataURL('image/jpeg');
 
     campoCamera.style.display = 'none';
     mensagem.style.display = 'block';
